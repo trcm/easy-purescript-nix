@@ -20,6 +20,10 @@ let
   };
 
   inputs = rec {
+    purs-0_12_0 = import ./purs/0.12.0.nix {
+      inherit pkgs;
+    };
+
     purs-0_13_3 = import ./purs/0.13.3.nix {
       inherit pkgs;
     };
